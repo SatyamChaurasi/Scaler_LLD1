@@ -4,6 +4,14 @@ public class Q5_Create_a_student_Class_OOPs_in_Java_Constructors {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Student st1 = new Student();
+		Student st2 = new Student(10);
+		Student st3 = new Student("Ram");
+		Student st4 = new Student(100,"Hanuman");
+		System.out.println("st1 "+st1.toString());
+		System.out.println("st2 "+st2.toString());
+		System.out.println("st3 "+st3.toString());
+		System.out.println("st4 "+st4.toString());
 
 	}
 //	Create a class Student with following requirements
@@ -46,5 +54,11 @@ class Student{
 		this.age = age;
 		this.name = name;
 	}
+	@Override
+	public String toString() {
+		return "Student [age=" + age + ", name=" + name + "]";
+	}
+	
+	
 	
 }
